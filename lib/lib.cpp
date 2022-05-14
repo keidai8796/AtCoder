@@ -25,3 +25,47 @@ vector<T>lis(vector<T>&a,bool strict=true){
     }
     return res;
 }
+
+long long floor_sqrt(long long n){
+    long long ok=0;
+    long long ng=min((long long)(1e9)+1,n);
+    while(ok+1<ng){
+        long long m=(ng+ok)/2;
+        if(m*m<=n)ok=m;
+        else ng=m;
+    }
+    return ok;
+}
+
+long long ceil_sqrt(long long n){
+    long long ng=-1;
+    long long ok=min((long long)(1e9),n);
+    while(ng+1<ok){
+        long long m=(ng+ok)/2;
+        if(m*m>=n)ok=m;
+        else ng=m;
+    }
+    return ok;
+}
+
+long long floor_cbrt(long long n){
+    long long ok=0;
+    long long ng=min((long long)(1e6)+1,n);
+    while(ok+1<ng){
+        long long m=(ng+ok)/2;
+        if(m*m*m<=n)ok=m;
+        else ng=m;
+    }
+    return ok;
+}
+
+long long ceil_cbrt(long long n){
+    long long ng=-1;
+    long long ok=min((long long)(1e6),n);
+    while(ng+1<ok){
+        long long m=(ng+ok)/2;
+        if(m*m*m>=n)ok=m;
+        else ng=m;
+    }
+    return ok;
+}
