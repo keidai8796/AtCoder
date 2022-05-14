@@ -1,5 +1,6 @@
 {
 	"AtCoder template": {
+		"scope": "cpp",
 		"prefix": "actemp",
 		"body": [
 		  "#include<bits/stdc++.h>",
