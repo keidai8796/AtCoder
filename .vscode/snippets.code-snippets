@@ -113,5 +113,16 @@
 		  "}"
 		],
 		"description": "ceil_qbrt"
+	},
+	"powll": {
+		"prefix": "powll",
+		"body": [
+		  "long long powll(long long a,int b){",
+		  "    long long res=1;",
+		  "    for(int i=0;i<b;i++)res*=a;",
+		  "    return res;",
+		  "}"
+		],
+		"description": "powll"
 	}
 }

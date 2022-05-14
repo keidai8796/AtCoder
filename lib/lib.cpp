@@ -69,3 +69,10 @@ long long ceil_cbrt(long long n){
     }
     return ok;
 }
+
+//pow関数をlong longに対応
+long long powll(long long a,int b){
+    long long res=1;
+    for(int i=0;i<b;i++)res*=a;
+    return res;
+}
