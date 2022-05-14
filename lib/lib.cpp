@@ -3,7 +3,6 @@ using namespace std;
 #include<atcoder/all>
 using namespace atcoder;
 
-//素数判定
 bool isPrime(long long n){
     if(n<2)return false;
     if(n==2)return true;
@@ -12,7 +11,6 @@ bool isPrime(long long n){
     return true;
 }
 
-//最長部分増加列
 template<class T>
 vector<T>lis(vector<T>&a,bool strict=true){
     vector<T>res;
@@ -70,9 +68,20 @@ long long ceil_cbrt(long long n){
     return ok;
 }
 
-//pow関数をlong longに対応
 long long powll(long long a,int b){
     long long res=1;
     for(int i=0;i<b;i++)res*=a;
+    return res;
+}
+
+long long modpow(long long a,long long n,long long mod=998244353){
+    a%=mod;
+    if(a==0)return 0;
+    long long res=1;
+    while(n>0){
+        if(n&1)res=res*a%mod;
+        a=a*a%mod;
+        n>>=1;
+    }
     return res;
 }
