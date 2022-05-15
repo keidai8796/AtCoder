@@ -85,3 +85,23 @@ long long modpow(long long a,long long n,long long mod=998244353){
     }
     return res;
 }
+
+template<class T>
+void comp(vector<T>&a){
+    set<T>s;
+    for(auto x:a)s.insert(x);
+    map<T,int>mp;
+    int cnt=0;
+    for(auto x:s)mp[x]=cnt++;
+    for(auto&x:a)x=mp[x];
+}
+
+template<class T>
+map<T,int> compmap(vector<T>&a){
+    set<T>s;
+    for(auto x:a)s.insert(x);
+    map<T,int>mp;
+    int cnt=0;
+    for(auto x:s)mp[x]=cnt++;
+    return mp;
+}
