@@ -207,5 +207,19 @@
 		  "}"
 		],
 		"description": "init_pow"
+	},
+	"gcd": {
+		"prefix": "gcd",
+		"body": [
+		  "long long gcd(long long a,long long b){return b==0?a:gcd(b,a%b);}"
+		],
+		"description": "gcd"
+	},
+	"lcm": {
+		"prefix": "lcm",
+		"body": [
+		  "long long lcm(long long num1,long long num2){return num1*num2/gcd(num1,num2);}"
+		],
+		"description": "lcm"
 	}
 }

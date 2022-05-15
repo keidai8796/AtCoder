@@ -131,3 +131,7 @@ void init_pow(){
     pw[0]=1;
     for(int i=1;i<19;i++)pw[i]=pw[i-1]*10;
 }
+
+long long gcd(long long a,long long b){return b==0?a:gcd(b,a%b);}
+
+long long lcm(long long num1,long long num2){return num1*num2/gcd(num1,num2);}
