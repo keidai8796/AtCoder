@@ -135,3 +135,19 @@ void init_pow(){
 long long gcd(long long a,long long b){return b==0?a:gcd(b,a%b);}
 
 long long lcm(long long num1,long long num2){return num1*num2/gcd(num1,num2);}
+
+vector<long long>primeFactors(long long n){
+    vector<long long> res;
+    while(n%2==0){
+        res.push_back(2);
+        n/=2;
+    }
+    for(long long i=3;i*i<=n;i+=2){
+        while(n%i==0){
+            res.push_back(i);
+            n/=i;
+        }
+    }
+    if(n>2)res.push_back(n);
+    return res;
+}
