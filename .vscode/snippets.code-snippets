@@ -246,7 +246,7 @@
 	"enumPrime": {
 		"prefix": "enumPrime",
 		"body": [
-		  "vector<ll> enumPrime(ll n){",
+		  "vector<ll>enumPrime(ll n){",
 		  "    vector<ll> res;",
 		  "    for(ll i=2;i*i<=n;i++){",
 		  "        bool f=false;",
@@ -263,5 +263,24 @@
 		  "}"
 		],
 		"description": "enumPrime"
+	},
+	"enumDiv": {
+		"prefix": "enumDiv",
+		"body": [
+		  "vector<long long>enumDiv(long long n){",
+		  "    vector<long long> res1;",
+		  "    vector<long long> res2;",
+		  "    for(long long i=1;i*i<=n;i++){",
+		  "        if(n%i==0){",
+		  "            res1.push_back(i);",
+		  "            if(i*i!=n)res2.push_back(n/i);",
+		  "        }",
+		  "    }",
+		  "    reverse(res2.begin(),res2.end());",
+		  "    res1.insert(res1.end(),res2.begin(),res2.end());",
+		  "    return res1;",
+		  "}"
+		],
+		"description": "enumDiv"
 	}
 }
