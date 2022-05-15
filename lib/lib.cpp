@@ -151,3 +151,19 @@ vector<long long>primeFactors(long long n){
     if(n>2)res.push_back(n);
     return res;
 }
+
+vector<long long> enumPrime(long long n){
+    vector<long long> res;
+    for(long long i=2;i*i<=n;i++){
+        bool f=false;
+        while(n%i==0){
+            if(!f){
+                res.push_back(i);
+                f=true;
+            }
+            n/=i;
+        }
+    }
+    if(n>2)res.push_back(n);
+    return res;
+}

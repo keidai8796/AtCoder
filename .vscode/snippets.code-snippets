@@ -242,5 +242,26 @@
 		  "}"
 		],
 		"description": "primeFactors"
+	},
+	"enumPrime": {
+		"prefix": "enumPrime",
+		"body": [
+		  "vector<ll> enumPrime(ll n){",
+		  "    vector<ll> res;",
+		  "    for(ll i=2;i*i<=n;i++){",
+		  "        bool f=false;",
+		  "        while(n%i==0){",
+		  "            if(!f){",
+		  "                res.push_back(i);",
+		  "                f=true;",
+		  "            }",
+		  "            n/=i;",
+		  "        }",
+		  "    }",
+		  "    if(n>2)res.push_back(n);",
+		  "    return res;",
+		  "}"
+		],
+		"description": "enumPrime"
 	}
 }
