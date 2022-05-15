@@ -125,3 +125,9 @@ long long C(int n,int k,int mod=998244353){
     if (n<0||k<0)return 0;
     return fac[n]*(finv[k]*finv[n-k]%mod)%mod;
 }
+
+vector<long long>pw(19);
+void init_pow(){
+    pw[0]=1;
+    for(int i=1;i<19;i++)pw[i]=pw[i-1]*10;
+}
