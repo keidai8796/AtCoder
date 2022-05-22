@@ -32,7 +32,7 @@
 		"description": "isPrime"
 	},
 	"lis": {
-		  "scope": "cpp",
+		"scope": "cpp",
 		"prefix": "lis",
 		"body": [
 		  "template<class T>",
@@ -51,6 +51,7 @@
 		"description": "lis"
 	},
 	"floor_sqrt": {
+		"scope": "cpp",
 		"prefix": "floor_sqrt",
 		"body": [
 		  "long long floor_sqrt(long long n){",
@@ -67,6 +68,7 @@
 		"description": "floor_sqrt"
 	},
 	"ceil_sqrt": {
+		"scope": "cpp",
 		"prefix": "ceil_sqrt",
 		"body": [
 		  "long long ceil_sqrt(long long n){",
@@ -83,6 +85,7 @@
 		"description": "ceil_sqrt"
 	},
 	"floor_qbrt": {
+		"scope": "cpp",
 		"prefix": "floor_qbrt",
 		"body": [
 		  "long long floor_cbrt(long long n){",
@@ -99,6 +102,7 @@
 		"description": "floor_qbrt"
 	},
 	"ceil_qbrt": {
+		"scope": "cpp",
 		"prefix": "ceil_qbrt",
 		"body": [
 		  "long long ceil_cbrt(long long n){",
@@ -115,6 +119,7 @@
 		"description": "ceil_qbrt"
 	},
 	"powll": {
+		"scope": "cpp",
 		"prefix": "powll",
 		"body": [
 		  "long long powll(long long a,int b){",
@@ -126,6 +131,7 @@
 		"description": "powll"
 	},
 	"modpow": {
+		"scope": "cpp",
 		"prefix": "modpow",
 		"body": [
 		  "long long modpow(long long a,long long n,long long mod=998244353){",
@@ -143,6 +149,7 @@
 		"description": "modpow"
 	},
 	"comp": {
+		"scope": "cpp",
 		"prefix": "comp",
 		"body": [
 		  "template<class T>",
@@ -158,6 +165,7 @@
 		"description": "comp"
 	},
 	"compmap": {
+		"scope": "cpp",
 		"prefix": "compmap",
 		"body": [
 		  "template<class T>",
@@ -173,6 +181,7 @@
 		"description": "compmap"
 	},
 	"com": {
+		"scope": "cpp",
 		"prefix": "com",
 		"body": [
 		  "vector<long long> fac,finv,inv;",
@@ -198,6 +207,7 @@
 		"description": "com"
 	},
 	"init_pow": {
+		"scope": "cpp",
 		"prefix": "init_pow",
 		"body": [
 		  "vector<long long>pw(19);",
@@ -209,6 +219,7 @@
 		"description": "init_pow"
 	},
 	"gcd": {
+		"scope": "cpp",
 		"prefix": "gcd",
 		"body": [
 		  "long long gcd(long long a,long long b){return b==0?a:gcd(b,a%b);}"
@@ -216,6 +227,7 @@
 		"description": "gcd"
 	},
 	"lcm": {
+		"scope": "cpp",
 		"prefix": "lcm",
 		"body": [
 		  "long long lcm(long long num1,long long num2){return num1*num2/gcd(num1,num2);}"
@@ -223,6 +235,7 @@
 		"description": "lcm"
 	},
 	"primeFactors": {
+		"scope": "cpp",
 		"prefix": "primeFactors",
 		"body": [
 		  "vector<long long>primeFactors(long long n){",
@@ -244,6 +257,7 @@
 		"description": "primeFactors"
 	},
 	"enumPrime": {
+		"scope": "cpp",
 		"prefix": "enumPrime",
 		"body": [
 		  "vector<ll>enumPrime(ll n){",
@@ -265,6 +279,7 @@
 		"description": "enumPrime"
 	},
 	"enumDiv": {
+		"scope": "cpp",
 		"prefix": "enumDiv",
 		"body": [
 		  "vector<long long>enumDiv(long long n){",
