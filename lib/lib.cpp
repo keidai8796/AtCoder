@@ -205,3 +205,15 @@ long long stdb_to_ll(string s,int n){
     for(int i=0;i<n-d+1;i++)res2*=10;
     return res1+res2;
 }
+
+template<class T>
+T floor_div(T a,T b){
+    if((a<0)^(b<0))return a/b-(a%b==0?0:1);
+    else return a/b;
+}
+
+template<class T>
+T ceil_div(T a,T b){
+    if((a<0)^(b<0))return a/b;
+    else return a/b+(a%b==0?0:1);
+}

@@ -327,5 +327,29 @@
 		  "}"
 		],
 		"description": "stdb_to_ll"
+	  },
+	  "floor_div": {
+		"scope": "cpp",
+		"prefix": "floor_div",
+		"body": [
+		  "template<class T>",
+		  "T floor_div(T a,T b){",
+		  "    if((a<0)^(b<0))return a/b-(a%b==0?0:1);",
+		  "    else return a/b;",
+		  "}"
+		],
+		"description": "floor_div"
+	  },
+	  "ceil_div": {
+		"scope": "cpp",
+		"prefix": "ceil_div",
+		"body": [
+		  "template<class T>",
+		  "T ceil_div(T a,T b){",
+		  "    if((a<0)^(b<0))return a/b;",
+		  "    else return a/b+(a%b==0?0:1);",
+		  "}"
+		],
+		"description": "ceil_div"
 	  }
 }
