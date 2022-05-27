@@ -181,3 +181,27 @@ vector<long long>enumDiv(long long n){
     res1.insert(res1.end(),res2.begin(),res2.end());
     return res1;
 }
+
+long long stdb_to_ll(string s,int n){
+    long long res1=0;
+    long long res2=0;
+    int d=0;
+    for(int i=0;i<s.size();i++){
+        if(s[i]=='.'){
+            d=1;
+            continue;
+        }
+        if(d==0){
+            res1*=10;
+            res1+=s[i]-'0';
+        }else{
+            res2*=10;
+            res2+=s[i]-'0';
+            d++;
+            if(d>n)break;
+        }
+    }
+    for(int i=0;i<n;i++)res1*=10;
+    for(int i=0;i<n-d+1;i++)res2*=10;
+    return res1+res2;
+}
