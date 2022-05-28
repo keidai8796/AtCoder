@@ -327,7 +327,7 @@
 		  "}"
 		],
 		"description": "stdb_to_ll"
-	  },
+	},
 	  "floor_div": {
 		"scope": "cpp",
 		"prefix": "floor_div",
@@ -339,8 +339,8 @@
 		  "}"
 		],
 		"description": "floor_div"
-	  },
-	  "ceil_div": {
+	},
+	"ceil_div": {
 		"scope": "cpp",
 		"prefix": "ceil_div",
 		"body": [
@@ -351,8 +351,8 @@
 		  "}"
 		],
 		"description": "ceil_div"
-	  },
-	  "Mo": {
+	},
+	"Mo": {
 		"scope": "cpp",
 		"prefix": "Mo",
 		"body": [
@@ -403,5 +403,5 @@
 		  "}"
 		],
 		"description": "Mo"
-	  }
+	}
 }
