@@ -229,3 +229,14 @@ long long modinv(long long a,long long m) {
     if(u<0)u+=m;
     return u;
 }
+
+string toBinary(long long n){
+    string res;
+    do{
+        if(n%2==0)res+="0";
+        else res+="1";
+        n/=2;
+    }while(n>0);
+    reverse(res.begin(),res.end());
+    return res;
+}

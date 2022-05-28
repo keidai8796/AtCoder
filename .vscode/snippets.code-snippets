@@ -421,5 +421,21 @@
 		  "}"
 		],
 		"description": "modinv"
+	},
+	"toBinary": {
+		"prefix": "toBinary",
+		"body": [
+		  "string toBinary(long long n){",
+		  "    string res;",
+		  "    do{",
+		  "        if(n%2==0)res+=\"0\";",
+		  "        else res+=\"1\";",
+		  "        n/=2;",
+		  "    }while(n>0);",
+		  "    reverse(res.begin(),res.end());",
+		  "    return res;",
+		  "}"
+		],
+		"description": "toBinary"
 	}
 }
