@@ -1,7 +1,7 @@
 {
 	"AtCoder template": {
 		"scope": "cpp",
-		"prefix": "actemp",
+		"prefix": "atcoder template",
 		"body": [
 		  "#include<bits/stdc++.h>",
 		  "using namespace std;",
@@ -12,7 +12,7 @@
 		  "#define rep(i,n) for(int i=0;i<n;i++)",
 		  "",
 		  "int main(){",
-		  "    ",
+		  "    $1",
 		  "}"
 		],
 		"description": "AtCoder template"
@@ -423,6 +423,7 @@
 		"description": "modinv"
 	},
 	"toBinary": {
+		"scope": "cpp",
 		"prefix": "toBinary",
 		"body": [
 		  "string toBinary(long long n){",
