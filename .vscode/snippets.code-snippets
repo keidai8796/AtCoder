@@ -356,9 +356,6 @@
 		"scope": "cpp",
 		"prefix": "Mo",
 		"body": [
-		  "#include<bits/stdc++.h>",
-		  "using namespace std;",
-		  "",
 		  "class Mo{",
 		  "    struct Q{",
 		  "        int l,r,index;",
