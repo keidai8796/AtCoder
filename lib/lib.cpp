@@ -240,3 +240,12 @@ string toBinary(long long n){
     reverse(res.begin(),res.end());
     return res;
 }
+
+vector<pair<long long,int>> rlc(vector<long long> a){
+    vector<pair<long long,int>> res;
+    for(int i=0;i<a.size();i++){
+        if(res.empty()||res.back().first!=a[i])res.emplace_back(a[i],1);
+        else res.back().second++;
+    }
+    return res;
+}

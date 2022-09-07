@@ -435,5 +435,19 @@
 		  "}"
 		],
 		"description": "toBinary"
+	},
+	"rlc": {
+		"prefix": "rlc",
+		"body": [
+		  "vector<pair<long long,int>> rlc(vector<long long> a){",
+		  "    vector<pair<long long,int>> res;",
+		  "    for(int i=0;i<a.size();i++){",
+		  "        if(res.empty()||res.back().first!=a[i])res.emplace_back(a[i],1);",
+		  "        else res.back().second++;",
+		  "    }",
+		  "    return res;",
+		  "}"
+		],
+		"description": "rlc"
 	}
 }
